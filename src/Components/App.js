@@ -1,4 +1,6 @@
 import { Component } from "react";
+
+import News from "./News/News";
 class App extends Component {
   state = {};
   render() {
@@ -7,6 +9,7 @@ class App extends Component {
         <header className="App-header">
           <h1>My feed</h1>
         </header>
+        <News items={items} />
       </div>
     );
   }
