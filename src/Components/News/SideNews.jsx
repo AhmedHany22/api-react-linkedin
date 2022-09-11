@@ -29,7 +29,11 @@ class SideNews extends Component {
     const loading = this.state.loading;
     return (
       <div>
-        <h3>Side News</h3>
+        <div className="grey darken-4 center-align mt-5 row">
+          <a href="/" className="brand-logo">
+            Recent News
+          </a>
+        </div>
         {loading ? <Spinner /> : <div className="row">{this.renderNews()}</div>}
       </div>
     );

@@ -1,5 +1,5 @@
 const SingleNews = ({ item }) => (
-  <div className="col s12 m6 l4">
+  <div className="col s12 m12 l6">
     <div className="card small">
       <div className="card-image waves-effect waves-block waves-light">
         <img className="activator" src={item.urlToImage} alt={item.title} />
