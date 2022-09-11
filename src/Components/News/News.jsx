@@ -1,7 +1,7 @@
 import { Component } from "react";
 
-import SingleNews from "./SingleNews";
 import Spinner from "../Spinner";
+import SingleNews from "./SingleNews";
 
 import { getData } from "../../API/NewsApi";
 class News extends Component {
@@ -28,7 +28,7 @@ class News extends Component {
   render() {
     const loading = this.state.loading;
     return (
-      <div className="container">
+      <div>
         {loading ? <Spinner /> : <div className="row">{this.renderNews()}</div>}
       </div>
     );
